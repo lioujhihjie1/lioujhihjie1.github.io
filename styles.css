@@ -59,7 +59,8 @@ body {
 /* The only rule that matters */
 #video-background {
   /*  making the video fullscreen  */
-  position: fixed;
+  position: absolute;
+  object-fit: cover;
   right: 0;
   bottom: 0;
   min-width: 100%;
