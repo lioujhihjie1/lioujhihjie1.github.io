@@ -51,7 +51,7 @@ body {
   margin: 0;
   padding: 0;
 /*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
-  background: #000;
+  background: #000000;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -67,7 +67,7 @@ body {
   width: auto;
   height: auto;
   z-index: -100;
-  background: #000;
+  background: #000000;
 }
 
 .content {width: 95%;
