@@ -128,7 +128,7 @@ h2 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "
 
 h3 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.5em;
-  color:#ffffff;
+  color:#b0e2e2;
   text-align:left;
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -137,7 +137,7 @@ h3 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "
 h4 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.2em;
   line-height: 0.1em;
-  color:#ffffff;
+  color:#b0e2e2;
   text-align:left;
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -169,19 +169,19 @@ p {font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Ar
 
 
     a:link {
-      color:white;
+      color:#b0e2e2;
       }
 
     a:visited{
-      color:white;
+      color:#b0e2e2;
       }
 
     a:hover{
-      color:white;
+      color:#b0e2e2;
       }
 
     a:active{
-      color:white;
+      color:#b0e2e2;
       }
 
 
@@ -222,8 +222,8 @@ p {font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Ar
       button {
       background-color: rgba(0, 0, 0, 0);
       border-radius: 4px;
-      border: 1px solid #ffffff;
-      color: #fff;
+      border: 1px solid #b0e2e2;
+      color: #b0e2e2;
       text-align: center;
       padding: 15px 20px;
       width: 93%;
@@ -253,7 +253,7 @@ p {font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Ar
       transition: 0.3s;
     }
     .button-one:hover {
-      background: #ffffff;
+      background: #b0e2e2;
       color: #232121;
     }
     .button-one:hover span {
