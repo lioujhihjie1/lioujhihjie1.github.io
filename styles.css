@@ -60,14 +60,8 @@ body {
 #video-background {
   /*  making the video fullscreen  */
   position: fixed;
-  object-fit: cover;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background-position: center center;
-  display: block;
-  background-size: cover;
+  right: 0;
+  bottom: 0;
   min-width: 100%;
   min-height: 100%;
   width: auto;
