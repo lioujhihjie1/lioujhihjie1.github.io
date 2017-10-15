@@ -243,21 +243,23 @@ p {font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Ar
       position: relative;
       transition: 0.3s;
       font-size: 1rem;
+      font-weight: bold;
     }
     .button-one span:after {
-      content: '»';
+      content:;
       position: absolute;
       opacity: 0;
       top: 0;
-      right: -20px;
+      right: 0px;
       transition: 0.3s;
+      font-weight: bold;
     }
     .button-one:hover {
       background: #b0e2e2;
       color: #232121;
     }
     .button-one:hover span {
-      padding-right: 25px;
+      padding-right: 0px;
     }
     .button-one:hover span:after {
       opacity: 1;
