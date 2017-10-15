@@ -1,0 +1,276 @@
+<style>
+
+/*
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity:0.75;
+  pointer-events: none;
+  }
+
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+<script type="text/javascript">
+    myVid=document.getElementById("myVideo");
+    myVid.muted=true;
+  </script>
+
+  <div class="video-background">
+      <div class="video-foreground">
+        <iframe id="myVideo" src="https://www.youtube.com/embed/WqaYKnvBA8o?controls=0&volume=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=WqaYKnvBA8o" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+/*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+  background: #000000;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* The only rule that matters */
+#video-background {
+  /*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: #000000;
+  pointer-events: none;
+}
+
+.content {width: 95%;
+          max-width: 1280px;
+          margin: 50px auto;
+          }
+.container{width:100%;
+              border:1px solid #ffffff;
+              background-color: #232121;}
+
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      }
+
+  [class*="col-"] {
+      float: left;
+      padding: 10px;
+      border: 0px solid red;
+      }
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+[class*="col-"] {
+        width: 100%;
+          }
+        }
+
+h1 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 3em;
+  color:#ffffff;
+  padding:10px;
+  text-align:center;
+
+  }
+
+h2 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 2em;
+  color:#ffffff;
+  padding:10px;
+  text-align:center;
+  }
+
+h3 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.5em;
+  color:#b0e2e2;
+  text-align:left;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+h4 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.2em;
+  line-height: 0.1em;
+  color:#b0e2e2;
+  text-align:left;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+p {font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+ font-size: 1em;
+ color:#ffffff;
+ -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;}
+ p.ex1{
+   line-height: 1.6em;
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+  p.ex2{
+  line-height: 1.6em;
+  font-weight: bold;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+   	      animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+       }
+
+ blockquote {font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1em;
+  color:#ffffff;
+  line-height: 1.6em;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;}
+
+
+    a:link {
+      color:#b0e2e2;
+      }
+
+    a:visited{
+      color:#b0e2e2;
+      }
+
+    a:hover{
+      color:#b0e2e2;
+      }
+
+    a:active{
+      color:#b0e2e2;
+      }
+
+
+      @-webkit-keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+
+
+
+      .button-group {
+      width: 500px;
+      margin: 0 auto;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+      button {
+      background-color: rgba(0, 0, 0, 0);
+      border-radius: 4px;
+      border: 1px solid #b0e2e2;
+      color: #b0e2e2;
+      text-align: center;
+      padding: 15px 20px;
+      width: 93%;
+      transition: all 0.3s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button-one {
+      display: inline-block;
+      -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+              animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+    .button-one span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.3s;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .button-one span:after {
+      content:;
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: 0px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+    .button-one:hover {
+      background: #b0e2e2;
+      color: #232121;
+    }
+    .button-one:hover span {
+      padding-right: 0px;
+    }
+    .button-one:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+    img{
+      }
+
+    img.ex1 {
+      border-radius: 50%;
+      }
+
+</style>
