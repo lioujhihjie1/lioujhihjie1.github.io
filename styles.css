@@ -137,6 +137,7 @@ h3 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "
 h4 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.2em;
   line-height: 1.2em;
+  padding-top: 12px;
   color:#b0e2e2;
   text-align:left;
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
