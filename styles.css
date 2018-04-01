@@ -136,7 +136,7 @@ h3 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "
 
 h4 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.2em;
-  line-height: 0.1em;
+  line-height: 1.2em;
   color:#b0e2e2;
   text-align:left;
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -149,21 +149,22 @@ p {font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Ar
  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
          animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;}
  p.ex1{
-   line-height: 1.6em;
+   line-height: 1.7em;
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     }
   p.ex2{
   line-height: 1.6em;
-  font-weight: bold;
+  font-weight: ;
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
    	      animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
        }
 
  blockquote {font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
   color:#ffffff;
   line-height: 1.6em;
+  margin-left: 17px;
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
          animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;}
 
