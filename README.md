@@ -1,2 +1,2 @@
-# lioujhihjie1.github.io
-Placebo Studio
+# lioujhihjie.github.io
+Personal Website
