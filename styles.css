@@ -198,12 +198,40 @@
           border:0pt solid white;
           margin:25px 0px 5px 0px;
           display: block;
-          -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-          animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-          -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-          animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          -webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          -webkit-animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
          background-color:#AFE2E3;
          background-size: cover;}
+
+         img.ex2{
+           width:98%;
+           height: auto;
+           border:0pt solid white;
+           margin:25px 0px 5px 0px;
+           display: block;
+           transition:all .3s ease-in-out;
+           -webkit-transition:all .3s ease-in-out;
+           -moz-transition:all .3s ease-in-out;
+           -ms-transition:all .3s ease-in-out;
+           -o-transition:all .3s ease-in-out;
+          background-color:#AFE2E3;
+          background-size: cover;}
+
+          img.ex2:hover{
+            width:98%;
+            height: auto;
+            border:0pt solid white;
+            margin:25px 0px 5px 0px;
+            display: block;
+            transform:scale(1.03);
+            -webkit-transform:scale(1.03);
+            -moz-transform:scale(1.03);
+            -ms-transform:scale(1.03);
+            -o-transform:scale(1.03);
+           background-color:#AFE2E3;
+           background-size: cover;}
 
 
         /**
