@@ -234,6 +234,16 @@
            background-size: cover;}
 
 
+          .box{
+            width:150px;
+            height:150px;
+
+           }
+          .logo2{background-image:url(images/header/placebo_studio_logo.svg);
+             z-index: 200;}
+          .logo1{background-image:url(images/header/placebo_studio_logo_heart.svg);
+             z-index: 100;}
+
         /**
          * ----------------------------------------
          * animation fade-in
@@ -304,6 +314,14 @@
         .footer {
                 position: absolute;
                 width:100%;
+                bottom:0px;
+                left:0px;
+                position:fixed;
+                z-index: 100;
+                }
+
+        .footerlogo{
+                position: absolute;
                 bottom:0px;
                 left:0px;
                 position:fixed;
