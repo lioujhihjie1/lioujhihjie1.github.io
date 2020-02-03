@@ -1,13 +1,25 @@
 <style>
     * {box-sizing: border-box;}
 
-    .header {background:-webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.95) 40%,rgba(255,255,255,0.8) 60%,rgba(255,255,255,0) 100%); ;
+    .header {background:rgba(255,255,255,1) 0%;
             width:100%;
-            height:12%;
-            top:-1px;
+            height:50px;
+            top:0px;
             position:fixed;
             z-index: 100;
             }
+
+            /**
+             * ----------------------------------------
+             *     .header {background:-webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.95) 40%,rgba(255,255,255,0.8) 60%,rgba(255,255,255,0) 100%); ;
+                         width:100%;
+                         height:12%;
+                         top:-1px;
+                         position:fixed;
+                         z-index: 100;
+                         }
+             * ----------------------------------------
+             */
 
     .container {width: 100%;
                 }
@@ -29,6 +41,7 @@
               display: inline-block;
               text-align: center;
               padding: 10px;
+              padding-top: 15px;
               }
 
     .content {width: 95%;
@@ -89,6 +102,17 @@
       margin-right: 25px;
       text-align:left;
       }
+      h2.ex1{
+        border-bottom: 2px solid transparent;
+        padding-bottom: 1px;
+        padding:0px;
+          }
+
+      h2.ex1:hover{
+        border-bottom: 0px solid #000;
+        padding-bottom: 0px;
+        padding:0px;
+          }
 
   h3 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
       font-size: 1.5em;
@@ -100,6 +124,17 @@
       font-weight: 400;
       line-height: 1.6em;
       }
+      h3.ex1{
+        border-bottom: 1px solid transparent;
+        padding-bottom: 1px;
+        padding:0px;
+          }
+      h3.ex1:hover{
+        border-bottom: 0px solid transparent;
+        padding-bottom: 0px;
+        padding:0px;
+          }
+
 
   h4 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
       font-size: 2em;
@@ -114,6 +149,7 @@
          line-height:1.3em;
          padding-top:5px;
           }
+
 
   h5 {font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
       font-size: 1.1em;
@@ -217,7 +253,7 @@
            -moz-transition:all .3s ease-in-out;
            -ms-transition:all .3s ease-in-out;
            -o-transition:all .3s ease-in-out;
-          background-color:#AFE2E3;
+          background-color:;
           background-size: cover;}
 
           img.ex2:hover{
@@ -231,7 +267,7 @@
             -moz-transform:scale(1.02);
             -ms-transform:scale(1.02);
             -o-transform:scale(1.02);
-           background-color:#AFE2E3;
+           background-color:;
            background-size: cover;}
 
 
@@ -319,6 +355,7 @@
           color: white;
         }
 
+
         .footer {
                 position: absolute;
                 width:100%;
@@ -362,5 +399,183 @@
                         max-width: 100%;
                 }
 
+
+
+                /**
+                 * ----------------------------------------
+                 * slider-top
+                 * ----------------------------------------
+                 */
+                *, *::after, *::before {
+                  box-sizing: border-box;
+                }
+
+                body {
+                  font-family: sans-serif;
+                  color: #444444;
+                  background-color: #ffffff;
+                  margin: 0;
+                  padding: 0;
+                }
+
+                ul, ol {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                }
+
+                .full-width-slider {
+                  position: relative;
+                  height: 90vh;
+                  overflow: hidden;
+                }
+
+                .slides {
+                  position: relative;
+                  height: 100vh;
+                  background-color: dodgerblue;
+                }
+
+                @media (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi){}
+
+                .slides li {
+                  display: table;
+                  position: absolute;
+                  z-index: 1;
+                  top: 0;
+                  left: 0;
+                  height: 100%;
+                  width: 100%;
+                  transform: translateX(100%);
+                  transition: transform 0.5s;
+                  background-color: tomato;
+                }
+
+                .slides li:nth-of-type(1) {
+                  background-color: darkseagreen;
+                  background-image: url(images/chuan_animal_hospital/chuan_animal_hospital_01.jpg);
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                }
+
+                .slides li:nth-of-type(2) {
+                  background-color: tomato;
+                  background-image: url(images/epic_mission_films/epic_mission_films_01.jpg);
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                }
+
+                .slides li:nth-of-type(3) {
+                  background-color: aquamarine;
+                  background-image: url(images/mom_poetry/mom_poetry_01.jpg);
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                }
+
+                .slides li:nth-of-type(4) {
+                  background-color: darkseagreen;
+                  background-image: url(images/promised_land/promised_land_01.jpg);
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                }
+
+
+                .slides li.selected {
+                  z-index: 2;
+                  transform: translateX(0);
+                }
+
+                .slides li.move-left {
+                  transform: translateX(-100%);
+                }
+
+                .slides li.visible {
+                  z-index: 2;
+                }
+
+                .slides li > div {
+                  display: table-cell;
+                  vertical-align: middle;
+                  text-align: left;
+                  color: #FFF;
+                  -webkit-font-smoothing: antialiased;
+                  -moz-osx-font-smoothing: grayscale;
+                }
+
+                .slides h2 {
+                  margin-top: 0;
+                }
+
+                .slider-navigation a {
+                  position: absolute;
+                  z-index: 3;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  left: 20px;
+                  height: 48px;
+                  width: 48px;
+                  color: #fff;
+                  text-decoration: none;
+                  font-weight: 100;
+                  opacity: 0.5;
+                  transition: opacity 0.3s, visibility 0.3s;
+                }
+                .slider-navigation a:hover {
+                  opacity: 1;
+                }
+                @media (max-width: 500px) {
+                  .slider-navigation a {
+                    display: none;
+                  }
+                }
+
+                .slider-navigation a.next {
+                  left: auto;
+                  right: 20px;
+                }
+
+                .slider-dots-navigation {
+                  position: absolute;
+                  z-index: 3;
+                  bottom: 20px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                }
+                @media (max-width: 500px) {
+                  .slider-dots-navigation {
+                    display: none;
+                  }
+                }
+
+                .slider-dots-navigation li {
+                  display: inline-block;
+                  float: left;
+                  margin-right: 15px;
+                }
+                .slider-dots-navigation li:last-of-type {
+                  margin-right: 0;
+                }
+
+                .slider-dots-navigation a {
+                  display: block;
+                  height: 14px;
+                  width: 14px;
+                  border: 1px solid #FFF;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-indent: 100%;
+                  color: transparent;
+                  transition: background-color 0.3s;
+                }
+
+                .slider-dots-navigation a:hover,
+                .slider-dots-navigation a.selected {
+                  background-color: #FFF;
 
 </style>
