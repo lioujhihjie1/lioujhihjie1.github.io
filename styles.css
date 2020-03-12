@@ -203,6 +203,9 @@
        margin-left: 35px;
        margin-top: 50px;
         }
+      p.ex2{
+        color:#ffffff;
+           }
 
     a:link {
       color:#232121;
@@ -274,8 +277,12 @@
           .box{
             width:150px;
             height:150px;
-
            }
+
+          .logo4{background-image:url(images/header/placebo_studio_logo_white.svg);
+              z-index: 200;}
+          .logo3{background-image:url(images/header/placebo_studio_logo_heart_white.svg);
+              z-index: 100;}
           .logo2{background-image:url(images/header/placebo_studio_logo.svg);
              z-index: 200;}
           .logo1{background-image:url(images/header/placebo_studio_logo_heart.svg);
